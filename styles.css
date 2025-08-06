@@ -592,3 +592,8 @@
             text-decoration: none;
             transition: color 0.3s;
         }
+
+        .contact-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }

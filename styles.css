@@ -568,22 +568,22 @@
         }
 
         .social-links a {
-            margin: 0 15px;
-            color: #333;
-            font-size: 24px;
+            margin: 0 25px;
+            color: #4cdc0e;
+            font-size: 35px;
             transition: color 0.3s;
             text-decoration: none;
         }
 
         .social-links a:hover {
-            color: #007bff;
+            color: #f50909;
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             margin-top: 50px;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #000000;
+            color: #f5f0f0;
         }

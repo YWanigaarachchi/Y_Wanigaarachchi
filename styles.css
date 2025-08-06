@@ -96,7 +96,7 @@
 
         .hero-content {
             text-align: center;
-            color: #ccd6f6;
+            color: hsl(240, 33%, 92%);
             z-index: 2;
             max-width: 800px;
             padding: 0 2rem;
@@ -105,7 +105,7 @@
         .hero-content h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #64ffda, #57cbff);
+            background: linear-gradient(135deg, #fffeff, #57cbff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: fadeInUp 1s ease-out;
@@ -141,7 +141,7 @@
             background: transparent;
             color: #64ffda;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 500px;
             transition: all 0.3s ease;
             font-weight: 600;
             display: inline-flex;
@@ -168,7 +168,7 @@
         /* Sections */
         section {
             padding: 100px 0;
-            max-width: 1200px;
+            max-width: 1700px;
             margin: 0 auto;
         }
 

@@ -587,3 +587,8 @@
             background-color: #000000;
             color: #f5f0f0;
         }
+        footer a {
+            color: #4cdc0e;
+            text-decoration: none;
+            transition: color 0.3s;
+        }

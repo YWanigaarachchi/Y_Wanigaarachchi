@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="packages.html" class="active">Packages</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="packages">
+        <h2>Development Packages</h2>
+        <p style="text-align: center; color: #ccc; margin-bottom: 3rem; font-size: 1.1rem;">
+            Choose the perfect package that fits your needs and budget
+        </p>
+
+        <!-- Category Tabs -->
+        <div class="package-category-tabs">
+            <button class="category-tab active" onclick="switchCategory('website')">Website Development</button>
+            <button class="category-tab" onclick="switchCategory('social')">Social Media Management</button>
+        </div>
+
+        <!-- Website Development Packages -->
+        <div id="website-packages" class="package-category active">
+            <div class="packages-grid">
+
+                <!-- Starter -->
+                <div class="package-card">
+                    <h3 class="package-name">Starter</h3>
+                    <div class="package-price">25,000 <span class="package-currency">LKR</span></div>
+                    <p class="package-description">Perfect for small businesses and personal websites</p>
+                    <ul class="package-features">
+                        <li>Single Page Website</li>
+                        <li>Responsive Design</li>
+                        <li>Contact Form</li>
+                        <li>Basic SEO Setup</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Starter', '25,000', 'website')">Choose Plan</button>
+                </div>
+
+                <!-- Professional -->
+                <div class="package-card package-popular">
+                    <span class="popular-badge">POPULAR</span>
+                    <h3 class="package-name">Professional</h3>
+                    <div class="package-price">55,000 <span class="package-currency">LKR</span></div>
+                    <p class="package-description">Complete solution for established businesses</p>
+                    <ul class="package-features">
+                        <li>Up to 10 Pages</li>
+                        <li>Advanced Responsive Design</li>
+                        <li>Blog Section</li>
+                        <li>Advanced SEO</li>
+                        <li>Google Analytics</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Professional', '55,000', 'website')">Choose Plan</button>
+                </div>
+
+                <!-- Business Pro -->
+                <div class="package-card">
+                    <h3 class="package-name">Business Pro</h3>
+                    <div class="package-price">120,000 <span class="package-currency">LKR</span></div>
+                    <p class="package-description">Full featured online store solution</p>
+                    <ul class="package-features">
+                        <li>Unlimited Pages</li>
+                        <li>Full E commerce</li>
+                        <li>Payment Gateway</li>
+                        <li>Inventory Management</li>
+                        <li>Advanced Analytics</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Business Pro', '120,000', 'website')">Choose Plan</button>
+                </div>
+            </div>
+
+            <!-- View More -->
+            <div class="view-more-packages">
+                <button class="view-more-btn" onclick="toggleMorePackages('website')">View More Packages ▼</button>
+            </div>
+
+            <!-- Hidden Packages -->
+            <div id="website-more-packages" class="packages-grid hidden-packages">
+
+                <div class="package-card">
+                    <h3 class="package-name">Basic</h3>
+                    <div class="package-price">35,000 <span class="package-currency">LKR</span></div>
+                    <p class="package-description">Ideal for growing businesses</p>
+                    <ul class="package-features">
+                        <li>Up to 5 Pages</li>
+                        <li>Responsive Design</li>
+                        <li>Contact Form and Map</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Basic', '35,000', 'website')">Choose Plan</button>
+                </div>
+
+                <div class="package-card">
+                    <h3 class="package-name">Business</h3>
+                    <div class="package-price">80,000 <span class="package-currency">LKR</span></div>
+                    <p class="package-description">Advanced features for competitive businesses</p>
+                    <ul class="package-features">
+                        <li>Up to 15 Pages</li>
+                        <li>Custom Animations</li>
+                        <li>E commerce Basic</li>
+                        <li>Payment Gateway</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Business', '80,000', 'website')">Choose Plan</button>
+                </div>
+
+                <div class="package-card">
+                    <h3 class="package-name">Enterprise</h3>
+                    <div class="package-price">240,000 <span class="package-currency">LKR</span></div>
+                    <p class="package-description">Premium solution for large scale projects</p>
+                    <ul class="package-features">
+                        <li>Unlimited Everything</li>
+                        <li>Custom Web Application</li>
+                        <li>Advanced Features</li>
+                        <li>Dedicated Support</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Enterprise', '240,000', 'website')">Choose Plan</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Social Media Management -->
+        <div id="social-packages" class="package-category">
+            <div class="packages-grid">
+
+                <div class="package-card">
+                    <h3 class="package-name">Social Starter</h3>
+                    <div class="package-price">15,000 <span class="package-currency">LKR mo</span></div>
+                    <p class="package-description">Perfect for small businesses starting out</p>
+                    <ul class="package-features">
+                        <li>2 Social Platforms</li>
+                        <li>12 Posts per Month</li>
+                        <li>Content Creation</li>
+                        <li>Basic Analytics</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Social Starter', '15,000', 'social')">Choose Plan</button>
+                </div>
+
+                <div class="package-card package-popular">
+                    <span class="popular-badge">POPULAR</span>
+                    <h3 class="package-name">Social Pro</h3>
+                    <div class="package-price">25,000 <span class="package-currency">LKR mo</span></div>
+                    <p class="package-description">Most popular for growing brands</p>
+                    <ul class="package-features">
+                        <li>4 Social Platforms</li>
+                        <li>20 Posts per Month</li>
+                        <li>Content Creation and Design</li>
+                        <li>Community Management</li>
+                        <li>Monthly Reports</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Social Pro', '25,000', 'social')">Choose Plan</button>
+                </div>
+
+                <div class="package-card">
+                    <h3 class="package-name">Social Premium</h3>
+                    <div class="package-price">55,000 <span class="package-currency">LKR mo</span></div>
+                    <p class="package-description">Complete social media solution</p>
+                    <ul class="package-features">
+                        <li>All Major Platforms</li>
+                        <li>40 Posts per Month</li>
+                        <li>Professional Content</li>
+                        <li>Ad Campaign Management</li>
+                        <li>Influencer Outreach</li>
+                        <li>Detailed Analytics</li>
+                    </ul>
+                    <button class="package-button" onclick="showOrderPopup('Social Premium', '55,000', 'social')">Choose Plan</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <div class="footer-brand">John Doe</div>
+                <p>Transforming ideas into digital products. Let's build something great together.</p>
+                <div class="footer-social">
+                    <a href="#" title="GitHub">💻</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="Email">📧</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <p>Web Development</p>
+                <p>Responsive Design</p>
+                <p>E Commerce Solutions</p>
+                <p>Custom Web Applications</p>
+                <p>SEO Optimization</p>
+                <p>Website Maintenance</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Get In Touch</h3>
+                <p>📍 Colombo, Sri Lanka</p>
+                <p>📧 gencodezone@gmail.com</p>
+                <p>📱 +94 76 585 5570</p>
+                <p>📱 +94 71 085 5570</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Available for freelance opportunities and exciting projects!</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 John Doe. All rights reserved.</p>
+            <p>Made with HTML, CSS and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        function switchCategory(category) {
+            document.querySelectorAll('.category-tab').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.package-category').forEach(sec => sec.classList.remove('active'));
+
+            if (category === 'website') {
+                document.getElementById('website-packages').classList.add('active');
+                document.querySelector('.category-tab:first-child').classList.add('active');
+            } else {
+                document.getElementById('social-packages').classList.add('active');
+                document.querySelectorAll('.category-tab')[1].classList.add('active');
+            }
+        }
+
+        function toggleMorePackages(type) {
+            const section = document.getElementById(type + '-more-packages');
+            section.classList.toggle('hidden-packages');
+        }
+
+        function showOrderPopup(name, price, category) {
+            alert('Package Selected: ' + name + ' Price: ' + price + ' Category: ' + category);
+        }
+    </script>
+
+</body>
+</html>

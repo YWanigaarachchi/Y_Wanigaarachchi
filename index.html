@@ -3,422 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasas Wanigaarachchi - Software Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
 </head>
 <body>
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-indicator">
-        <div class="scroll-progress" id="scrollProgress"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">Y.Wanigaararachchi</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+        <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Yasas Wanigaarachchi</h1>
-            <p class="subtitle">Software Engineering Student at ICBT Campus</p>
-            <p class="description">
-                Passionate about building efficient, real-world software solutions. 
-                Combining academic excellence with hands-on project experience to create 
-                innovative applications that make a difference.
-            </p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-code"></i>
-                    View My Work
-                </a>
-                <a href="#contact" class="btn">
-                    <i class="fas fa-envelope"></i>
-                    Get In Touch
-                </a>
+            <div class="hero-text">
+                <h1>John Doe</h1>
+                <p class="subtitle">Web Developer & Designer</p>
+                <p class="tagline">I'm a passionate web developer specializing in creating beautiful, functional, and user-friendly websites. With expertise in HTML, CSS, and JavaScript, I transform ideas into digital experiences that make a difference.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="packages.html" class="cta-button">View Packages</a>
+                    <a href="contact.html" class="cta-button" style="background: transparent; border: 2px solid #fff; color: #fff;">Get In Touch</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="cta-buttons">
-                <a href="https://www.linkedin.com/in/yasas-wanigaarachchi-69a2a9260/" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i>
-                    LinkIn Profile
-                </a>
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I'm a dedicated software engineering student at ICBT Campus, Sri Lanka, 
-                    with a passion for technology and innovation. My academic journey has equipped 
-                    me with a solid foundation in both frontend and backend technologies.
-                </p>
-                <p>
-                    Through hands-on projects and continuous self-learning, I've developed 
-                    practical coding skills and a deep understanding of software development 
-                    principles. I'm particularly interested in full-stack development, 
-                    database systems, and exploring the integration of AI/ML in web applications.
-                </p>
-                <p>
-                    My goal is to contribute to innovative software projects that solve 
-                    real-world problems and make a positive impact on people's lives.
-                </p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">7</div>
-                    <div class="stat-label">Technologies</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">2+</div>
-                    <div class="stat-label">Years Learning</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Dedication</div>
+            <div class="hero-photo">
+                <div class="profile-photo">
+                    <!-- Replace the line below with: <img src="your-photo.jpg" alt="Your Name"> -->
+                    <div class="placeholder">👨‍💻</div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3><i class="fas fa-code"></i> Frontend Development</h3>
-                <div class="skill-item">
-                    <span class="skill-name">HTML</span>
-                    <span class="skill-percentage">100%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="100%"></div>
-                </div>
-                
-                <div class="skill-item">
-                    <span class="skill-name">CSS</span>
-                    <span class="skill-percentage">100%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="100%"></div>
-                </div>
-                
-                <div class="skill-item">
-                    <span class="skill-name">JavaScript</span>
-                    <span class="skill-percentage">80%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="80%"></div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-server"></i> Backend Development</h3>
-                <div class="skill-item">
-                    <span class="skill-name">PHP</span>
-                    <span class="skill-percentage">80%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="80%"></div>
-                </div>
-                
-                <div class="skill-item">
-                    <span class="skill-name">Python</span>
-                    <span class="skill-percentage">50%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="50%"></div>
-                </div>
-                
-                <div class="skill-item">
-                    <span class="skill-name">Java</span>
-                    <span class="skill-percentage">80%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="80%"></div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-laptop-code"></i> Programming</h3>
-                <div class="skill-item">
-                    <span class="skill-name">C++</span>
-                    <span class="skill-percentage">85%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="85%"></div>
-                </div>
-                
-                <div class="skill-item">
-                    <span class="skill-name">MySQL</span>
-                    <span class="skill-percentage">75%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="75%"></div>
-                </div>
-                
-                <div class="skill-item">
-                    <span class="skill-name">Git</span>
-                    <span class="skill-percentage">70%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-width="70%"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Student Management System</h3>
-                    <p class="project-description">
-                        A comprehensive C++ console application for managing student records, 
-                        featuring data validation, file handling, and user-friendly interface.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">File I/O</span>
-                        <span class="tech-tag">OOP</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-book"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Online Book Store</h3>
-                    <p class="project-description">
-                        Full-stack e-commerce web application with user authentication, 
-                        shopping cart, and payment integration using PHP and MySQL.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Site
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-hospital"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Hospital Management System</h3>
-                    <p class="project-description">
-                        Comprehensive healthcare management web application with patient records, 
-                        appointment scheduling, and staff management features.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-cloud-sun"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Weather Analyzer</h3>
-                    <p class="project-description">
-                        Python application that processes weather data from files, 
-                        performs statistical analysis, and generates detailed reports.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">File Handling</span>
-                        <span class="tech-tag">Data Analysis</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Responsive Portfolio</h3>
-                    <p class="project-description">
-                        Modern, responsive personal portfolio website showcasing projects 
-                        and skills with smooth animations and interactive elements.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Responsive Design</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Site
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-plus"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">More Projects Coming Soon</h3>
-                    <p class="project-description">
-                        Currently working on exciting new projects including AI/ML integration, 
-                        mobile applications, and cloud-based solutions.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">AI/ML</span>
-                        <span class="tech-tag">Cloud</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#contact" class="project-link">
-                            <i class="fas fa-envelope"></i>
-                            Stay Updated
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <p class="contact-description">
-                I'm always interested in new opportunities, collaborations, and connecting 
-                with fellow developers. Whether you have a project in mind or just want to chat 
-                about technology, feel free to reach out!
-            </p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p>ywanigaarachchi@gmail.com</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+94 70 360 8091</p>
-                    </div>
-                </div>
-                <!-- Social Links -->
-                <div class="social-links">
-                    <a href="https://github.com/ywanigaarachchi" target="_blank" rel="noopener" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61556104161608" target="_blank" rel="noopener" title="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/yasas-wanigaarachchi-69a2a9260/" target="_blank" rel="noopener" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/yasas9970/" target="_blank" rel="noopener" title="Instagram">
-                        <i class="fab fa-instagram"></i>    
-                    </a>
-                    <a href="https://twitter.com/ywanigaarachchi" target="_blank" rel="noopener" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@ywanigaarachchi" target="_blank" rel="noopener" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Yasas Wanigaarachchi. All rights reserved.</p>
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <div class="footer-brand">John Doe</div>
+                <p>Transforming ideas into exceptional digital experiences. Let's build something amazing together.</p>
+                <div class="footer-social">
+                    <a href="" title="GitHub">💻</a>
+                    <a href="" title="LinkedIn">💼</a>
+                    <a href="" title="Twitter">🐦</a>
+                    <a href="" title="Email">📧</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-section">
+                <h3>Services</h3>
+                <p>Web Development</p>
+                <p>Responsive Design</p>
+                <p>E-Commerce Solutions</p>
+                <p>Custom Web Applications</p>
+                <p>SEO Optimization</p>
+                <p>Website Maintenance</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Get In Touch</h3>
+                <p>📍 Colombo, Sri Lanka</p>
+                <p>📧 gencodezone@gmail.com</p>
+                <p>📱 +94 76 585 5570</p>
+                <p>📱 +94 71 085 5570</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Available for freelance opportunities and exciting projects!</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 John Doe. All rights reserved.</p>
+            <p>Made with <span class="footer-heart">❤️</span> and lots of ☕ | Crafted with HTML, CSS & JavaScript</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
+        <link script src="script.js"></link>
+    
 </body>
 </html>
-
